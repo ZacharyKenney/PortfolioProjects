@@ -1,5 +1,7 @@
 package Awakennings.InventoryApp;
 
+import java.math.BigDecimal;
+
 public class Item {
 
 	private String name;

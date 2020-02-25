@@ -4,12 +4,29 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
+import javax.sql.DataSource;
+import org.apache.commons.dbcp2.BasicDataSource;
+import com.InventoryApp.jdbc.ItemDAO;
+import com.InventoryApp.jdbc.JDBCItemDAO;
 
 public class Demo {
 	
+	private static ItemDAO itemDao;
+	
+	public Demo() {
+		BasicDataSource dataSource = new BasicDataSource();
+		dataSource.setUrl("jdbc:postgresql://localhost:5432/inventoryApp_db");
+		dataSource.setUsername("postgres");
+		dataSource.setPassword("DB_PASSWORD");
+		
+//		itemDao = new JDBCItemDAO(dataSource);
+		
+	}
 	static Scanner input = new Scanner(System.in);
 	
 	public static void main(String[] args) {
+		
+		Demo demo = new Demo();
 		
 // Introduction: As a user, I want to understand what program I'm looking at
 		System.out.println("Welcome to the Awakenings Coffee and Wine Inventory Application!");
@@ -22,7 +39,7 @@ public class Demo {
 		boolean done = false;
 		
 			
-// Collections/Initializers in use
+//Collections/Initializers in use
 		List<Item> itemList = new ArrayList<Item>();
 		itemList.add(new Item("Coffee", 50, 10.75));
 		itemList.add(new Item("Milk", 100, 8.50));
@@ -73,6 +90,8 @@ public class Demo {
 					double itemPricePerItem = Double.parseDouble(input.nextLine());
 					
 					Item currentItem = new Item(itemName, itemTargetQty, itemPricePerItem);
+					
+					itemDao.logItemToSystem(currentItem);
 					
 					itemList.add(currentItem);
 					
@@ -142,15 +161,7 @@ public class Demo {
 					System.out.print("Name: ");
 					String nameToEdit = input.nextLine();
 					
-					Item itemToEdit = null;
-					
-					for (Item i : itemList) {
-					
-						if (i.getName().equals(nameToEdit)) {
-							itemToEdit = i;
-						} 
-					
-					}	
+					Item itemToEdit = itemDao.getItemByName(nameToEdit);	
 					
 					if (nameToEdit.equals("NA")) {
 						done2 = true;
@@ -353,3 +364,4 @@ public class Demo {
 		}
 	}
 }
+
