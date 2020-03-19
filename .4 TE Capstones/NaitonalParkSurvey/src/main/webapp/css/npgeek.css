@@ -1,0 +1,188 @@
+nav {
+	background: honeydew;
+	height: 100px;
+	border-bottom: 2px solid grey;
+}
+#navDiv {
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+#navImg {
+	width:40%;
+	height: auto;
+}
+body {
+	background-image: url("../img/topo3.png");
+	 background-size: 500px;
+	 background-attachment: fixed;
+	 
+}
+
+.parkOverview {
+	display: flex;
+	padding: 10px;
+	align-items: center;
+	flex-direction: column;
+	
+}
+ 
+ .btn-outline-primary {
+ background: white;
+ }
+.parkImg {
+	border-radius: 10px;
+	width: 100%;
+	height: 200px;
+	object-fit: cover;
+}
+.nameAndDesc {
+	width: 100%;
+	border-radius: 10px;
+	background: white;
+	padding: 10px;
+	border: 2px solid grey;
+	font-size: .5em;
+}
+.weatherHeader {
+	background: white;
+	padding: 20px;
+}
+#todayWeather {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	background: white;
+	
+}
+#todayWeather img {
+	width:100%;
+}
+#todayWeather * {
+	padding: 2%;
+}
+
+
+.weatherDiv {
+	display: flex;
+	background: white;
+	justify-content: space-around;
+	background: white;
+}
+.weatherDiv div {
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+}
+.weatherDiv div img {
+	border-radius: 50%;
+	width: 65%;
+}
+
+.detailImg {
+	width: 100%;
+	height: 300px;
+	object-fit: cover;
+}
+.detailDesc {
+	background: ghostwhite;
+	padding: 2%;
+	text-align: center;
+}
+.parkStats {
+	width: 100%;
+	text-align: center;
+	background: gainsboro;
+	
+}
+.parkStats tr th {
+	padding-top: 2%;
+	text-decoration: underline;
+}
+.parkStats tr td {
+	padding-bottom: 2%;
+}
+hr {
+	background: white;
+}
+form {
+	padding: 4%;
+	font-size: 1.5em;
+}
+.form-check-input {
+	width: 25px;
+	height: 25px;
+}
+.form-check-label {
+	padding-left: 3%;
+}
+.cardDiv {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+.card {
+	margin: 3%;
+	width: 40%;
+}
+.card p {
+	font-size: 1em;
+}
+.leaderCard {
+	border: 5px solid gold;
+}
+.errors {
+	color: crimson;
+	font-weight: bold;
+	
+}
+@media only screen and (min-width: 768px){
+	#navImg {
+	width:35%;
+	height: auto;
+}
+.parkOverview {
+	flex-direction: row;
+}
+.card {
+	width: 25%;
+}
+.nameAndDesc {
+	font-size: 8pt;
+}
+.parkImg {
+height: 250px;
+}
+#todayWeather img {
+	width:80%;
+}
+}
+
+
+@media only screen and (min-width: 992px){
+#navDiv {
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+#navImg {
+	width:25%;
+	height: auto;
+}
+.nameAndDesc {
+	font-size: 10pt;
+}
+.parkImg {
+height: 300px;
+}
+#todayWeather img {
+	width:60%;
+}
+}
+@media only screen and (min-width: 1600px){
+#navImg {
+	width:20%;
+}
