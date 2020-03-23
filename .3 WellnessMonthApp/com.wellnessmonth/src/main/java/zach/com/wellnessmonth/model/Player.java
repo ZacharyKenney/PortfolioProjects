@@ -1,4 +1,4 @@
-package zach.com.wellnessmoth.model;
+package zach.com.wellnessmonth.model;
 
 public class Player {
 

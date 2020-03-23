@@ -1,4 +1,4 @@
-package zach.com.wellnessmoth.model;
+package zach.com.wellnessmonth.model;
 
 import java.time.LocalDate;
 import java.util.ArrayList;

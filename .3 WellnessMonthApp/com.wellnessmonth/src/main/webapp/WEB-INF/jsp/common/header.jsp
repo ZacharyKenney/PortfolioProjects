@@ -3,9 +3,9 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Hello Spring MVC</title>
+		<title>WellnessMonth</title>
 	</head>
 	<body>
-		<h1>Hello, <c:out value="${param.name}" />!</h1>
-	</body>
-</html>
+	<c:if test="${not empty confirmation}">
+		<span>${confirmation}</span>
+	</c:if>

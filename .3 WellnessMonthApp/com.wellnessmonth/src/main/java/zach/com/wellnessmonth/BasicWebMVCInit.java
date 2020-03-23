@@ -5,7 +5,7 @@
     	<failOnMissingWebXml>false</failOnMissingWebXml>
     </properties>
  */
-package zach.com.wellnessmonth.controller;
+package zach.com.wellnessmonth;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -56,10 +56,6 @@ public class BasicWebMVCInit implements WebMvcConfigurer, WebApplicationInitiali
 		resolver.setSuffix(".jsp");		
 		return resolver;
 	}
-	
-	/*
-	 * Uncomment this block to use a database.
-	 */
 	
 	@Bean
 	public BasicDataSource dataSource() {
