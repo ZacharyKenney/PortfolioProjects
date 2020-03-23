@@ -43,7 +43,6 @@ public class BasicWebMVCInit implements WebMvcConfigurer, WebApplicationInitiali
 		dispatcher.addMapping("/");
 	}
 	
-	//This method enables pass through of requests not handled by the dispatcher servlet (for static assets, for example).
 	@Override
 	public void configureDefaultServletHandling(DefaultServletHandlerConfigurer configurer) {
 		configurer.enable();
@@ -63,26 +62,8 @@ public class BasicWebMVCInit implements WebMvcConfigurer, WebApplicationInitiali
 		dataSource.setDriverClassName("org.postgresql.Driver");
 		dataSource.setUrl("jdbc:postgresql://localhost:5432/wellnessMonth");
 		dataSource.setUsername("postgres");
-		dataSource.setPassword("postgres1");
+		dataSource.setPassword(System.getenv("DB_PASSWORD"));
 		return dataSource;
 	}
-	
-	
-	/*
-	 * Uncomment this block to use JWT authorization.
-	 */
-	/*
-	@Bean
-	public JwtAuthInterceptor interceptor() {
-		List<String> exceptions = new ArrayList<String>();
-		exceptions.add("/register");
-		exceptions.add("/login");
-		return new JwtAuthInterceptor(exceptions);
-	}
-	
-	@Override
-	public void addInterceptors(InterceptorRegistry registry) {
-		registry.addInterceptor(interceptor());
-	}
-	*/
+
 }
