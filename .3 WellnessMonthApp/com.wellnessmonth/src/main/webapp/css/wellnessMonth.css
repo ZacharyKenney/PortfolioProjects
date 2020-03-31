@@ -1,0 +1,133 @@
+* {
+	background-color: #272727;
+	color: white;
+	box-sizing: border-box;
+}
+
+#wMHeader {
+	grid-area: header;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: white;
+	font-family: 'Merienda', cursive;
+	font-size: 3em;
+}
+.headerLogo {
+	width: 150px;
+}
+#userInfo {
+	height: 100px;
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+#userInfo-body {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	height: 75px;
+	background-color: #787878;
+	font-size: 1.5em;
+	padding-left: 10px;
+}
+
+#userImg {
+	height: 175%;
+	border-radius: 50%;
+	background-color: white;
+	margin-right: 30px;
+	margin-left: 10px;
+}
+
+nav {
+	margin-top: 30px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 30%;
+}
+nav a {
+	color: #272727;
+	width: 85%;
+	background-color: #2EEFE0;
+	border-radius: 10px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	text-align: center;
+	font-size: 1.3em;
+	font-weight: bold;
+	
+}
+nav a:nth-child(even) {
+	background-color: #FFC550; 
+}
+#main {
+	margin-top: 30px;
+	width: 40%;
+}
+
+.card {
+	border: 2px solid white;
+	border-radius: 10px;
+}
+.row {
+	border-radius: 10px;
+}
+.col-md-4 {
+	border-radius: 10px;
+}
+.card-img {
+	width: 100%;
+	background-color: white;
+}
+.col-md-8 {
+	border-radius: 10px;
+}
+.card-body {
+	border-radius: 10px;
+}
+.card-body p {
+	font-size: 1.3em;
+}
+
+#standings {
+	margin-top: 30px;
+	padding-right: 10px;
+	width: 25%;
+}
+#contestStandings,
+#contestStandings * {
+	text-align: center;
+	background-color: #FFC550;
+	color: #272727; 
+	border-radius: 10px;
+}
+#teamStandings,
+#teamStandings * {
+	text-align: center;
+	background-color: #2EEFE0;
+	color: #272727;
+	border-radius: 10px; 
+}
+#standings h5 {
+	text-decoration: underline;
+}
+
+#flex-container {
+	display: flex;
+	justify-content: space-between;
+}
+
+#details,
+#teamsForm,
+#contestForm,
+#challengeForm {
+	padding: 30px;
+}
+
+.form-control {
+	width: 30%;
+}
+

@@ -31,11 +31,12 @@ CREATE table team (
 );
 
 CREATE TABLE player (
-    player_id SERIAL,
     player_name VARCHAR(200) NOT NULL,
+    player_pw VARCHAR(32) NOT NULL,
+    salt VARCHAR(256) NOT NULL,
     points INTEGER DEFAULT 0,
     team_id INTEGER NOT NULL,
-    CONSTRAINT pk_player PRIMARY KEY(player_id),
+    CONSTRAINT pk_player PRIMARY KEY(player_name),
     FOREIGN KEY (team_id) REFERENCES team(team_id)
 );
 
@@ -45,18 +46,16 @@ CREATE TABLE challenge (
     points INTEGER NOT NULL,
     time_frame VARCHAR(100) NOT NULL,
     description VARCHAR(500) NOT NULL,
+    category VARCHAR(200) NOT NULL,
     CONSTRAINT pk_challenge PRIMARY KEY (challenge_id)
  );
  
  CREATE TABLE player_challenge (
- 	player_id INTEGER NOT NULL,
+ 	player_name VARCHAR(200) NOT NULL,
  	challenge_id INTEGER NOT NULL,
- 	CONSTRAINT pk_player_challenge PRIMARY KEY (player_id, challenge_id),
- 	FOREIGN KEY (player_id) REFERENCES player(player_id),
+ 	CONSTRAINT pk_player_challenge PRIMARY KEY (player_name, challenge_id),
+ 	FOREIGN KEY (player_name) REFERENCES player(player_name),
  	FOREIGN KEY (challenge_id) REFERENCES challenge(challenge_id)
  );
- 
- INSERT INTO challenge (challenge_name, points, time_frame, description)
- VALUES ('100 Push Ups', 20, 'day', 'Do 100 push in one Day');
  
  COMMIT;

@@ -1,18 +1,11 @@
 package zach.com.wellnessmonth.model;
 
-public class Player {
+public class Player implements Comparable<Player>{
 
-	private int id;
 	private String name;
 	private int points;
 	private int teamId;
 	
-	public int getId() {
-		return id;
-	}
-	public void setId(int id) {
-		this.id = id;
-	}
 	public String getName() {
 		return name;
 	}
@@ -31,5 +24,17 @@ public class Player {
 	public void setTeamId(int teamId) {
 		this.teamId = teamId;
 	}
+// Class Methods
 	
+	@Override
+	public int compareTo(Player p) {
+		int result = 0;
+		
+		if(this.getPoints() < p.getPoints()) {
+			result = 1;
+		} else if (this.getPoints() > p.getPoints()) {
+			result = -1;
+		}
+		return result;
+	}
 }

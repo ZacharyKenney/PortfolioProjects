@@ -2,6 +2,7 @@ package zach.com.wellnessmonth.model;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class WellnessContest {
@@ -46,21 +47,8 @@ public class WellnessContest {
 
 //Class Methods
 	public List<Team> getStandings() {
-		List<Team> teamsOrderedByPoints = new ArrayList<>();
-		int i = 0;
-		while (i < teams.size()) {
-			Team topTeam = teams.get(0);
-			for (Team t : teams) {
-				if (t.getTeamPoints() > topTeam.getTeamPoints()) {
-					topTeam = t;
-					i++;
-				}
-			}
-			teamsOrderedByPoints.add(topTeam);
-			teams.remove(topTeam);
-		}
-		teams = teamsOrderedByPoints;
-		return teamsOrderedByPoints;
+		Collections.sort(teams);
+		return teams;
 	}
 	
 }

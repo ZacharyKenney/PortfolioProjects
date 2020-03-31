@@ -6,6 +6,7 @@ public class Challenge {
 	private int points;
 	private String timeframe;
 	private String description;
+	private String category;
 	
 	public int getId() {
 		return id;
@@ -36,5 +37,11 @@ public class Challenge {
 	}
 	public void setDescription(String description) {
 		this.description = description;
+	}
+	public String getCategory() {
+		return category;
+	}
+	public void setCategory(String category) {
+		this.category = category;
 	}
 }
