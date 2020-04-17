@@ -1,0 +1,32 @@
+[
+    {
+        "unitId": "1",
+        "propertyId": "1",
+        "unitNumber": "2486-02"
+    },
+    {
+        "unitId": "2",
+        "propertyId": "2",
+        "unitNumber": "0211"
+    },
+    {
+        "unitId": "3",
+        "propertyId": "2",
+        "unitNumber": "0220"
+    },
+    {
+        "unitId": "4",
+        "propertyId": "2",
+        "unitNumber": "1001"
+    },
+    {
+        "unitId": "5",
+        "propertyId": "3",
+        "unitNumber": "5633C"
+    },
+    {
+        "unitId": "6",
+        "propertyId": "4",
+        "unitNumber": "621"
+    }
+]

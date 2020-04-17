@@ -9,7 +9,7 @@
 			<input class="form-control" type="text" name="challengeName" id="challengeName">
 		</div>
 		<div class="form-group">
-			<label for="challengeCategory">Points</label>
+			<label for="challengeCategory">Category</label>
 			<select class="form-control" name="challengeCategory" id="challengeCategory">
 				<option value="heart">Lifestyle</option>
 				<option value="food">Diet</option>

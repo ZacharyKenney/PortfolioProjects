@@ -1,0 +1,15 @@
+[
+{
+	"lease_id": "5", 
+	"start_date": "2020-01-02",
+	"balance": "2250",
+	"due_date": "2020-01-29",
+	"rent_status": "Overdue"
+},
+
+{
+    "rent_cycle_id": "1",  
+     "amount_paid": "525",
+     "date_paid": "2019-10-31 12:00:00"
+}
+]

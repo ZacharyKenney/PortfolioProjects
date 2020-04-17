@@ -1,0 +1,68 @@
+[
+    {
+        "leaseId": "1",
+        "userId": "1",
+        "unitId": "1",
+        "propertyId": "1",
+        "propertyName": "Lisa's Ridge",
+        "landlordEmail": "landlord@gmail.com",
+        "unitNumber": "2486-02",
+        "signedDate": "2020-04-07",
+        "rentLength": "6",
+        "rentAmount": "1000",
+        "lateFee": "5"
+    },
+    {
+        "leaseId": "2",
+        "userId": "2",
+        "unitId": "2",
+        "propertyId": "2",
+        "propertyName": "The Provident",
+        "landlordEmail": "admin@gmail.com",
+        "unitNumber": "0211",
+        "signedDate": "2020-04-07",
+        "rentLength": "6",
+        "rentAmount": "1000",
+        "lateFee": "5"
+    },
+    {
+        "leaseId": "3",
+        "userId": "3",
+        "unitId": "3",
+        "propertyId": "2",
+        "propertyName": "The Provident",
+        "landlordEmail": "admin@gmail.com",
+        "unitNumber": "0220",
+        "signedDate": "2020-04-07",
+        "rentLength": "6",
+        "rentAmount": "1000",
+        "lateFee": "5"
+    },
+    {
+        "leaseId": "4",
+        "userId": "4",
+        "unitId": "4",
+        "propertyId": "2",
+        "propertyName": "The Provident",
+        "landlordEmail": "admin@gmail.com",
+        "unitNumber": "1001",
+        "signedDate": "2020-04-07",
+        "rentLength": "6",
+        "rentAmount": "1000",
+        "lateFee": "5"
+    },
+    {
+        "leaseId": "5",
+        "userId": "5",
+        "unitId": "5",
+        "propertyId": "3",
+        "propertyName": "Hilltop Apartments",
+        "landlordEmail": "admin@gmail.com",
+        "unitNumber": "5633C",
+        "signedDate": "2020-04-07",
+        "rentLength": "6",
+        "rentAmount": "1000",
+        "lateFee": "5"
+    }
+
+]

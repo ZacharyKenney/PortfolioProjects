@@ -1,0 +1,64 @@
+[
+    {
+        "propertyId": "1",
+        "propertyName": "Lisa's Ridge",
+        "address" : "630 Vine St.",
+        "location": "Downtown",
+        "landlordEmail": "landlord@gmail.com",
+        "units": [
+            {
+                "unitId" : 1,
+                "bedCount": 1,
+                "rent": 750
+            }
+        ]
+    },
+    {
+        "propertyId": "2",
+        "propertyName": "The Provident",
+        "address" : "2251 Washington Ave.",
+        "location": "East Side",
+        "landlordEmail": "admin@gmail.com",
+        "units": [
+            {
+                "unitId" : 2,
+                "bedCount": 2,
+                "rent": 1100
+            }
+        ]
+    },
+    {
+        "propertyId": "3",
+        "propertyName": "Hilltop Apartments",
+        "address" : "5601 Viewpoint Rd.",
+        "location": "West Side",
+        "landlordEmail": "admin@gmail.com",
+        "units": [
+            {
+                "unitId" : 3,
+                "bedCount": 3,
+                "rent": 1500
+            }
+        ]
+    },
+    {
+        "propertyId": "4",
+        "propertyName": "The Bradford",
+        "address" : "1500 Groesbeck Rd.",
+        "location": "NKY",
+        "landlordEmail": "landlord@gmail.com",
+        "units": [
+            {
+                "unitId" : 4,
+                "bedCount": 3,
+                "rent": "1600"
+            },
+            {
+                "unitId" : 5,
+                "bedCount": 4,
+                "rent": "2000"
+            }
+        ]
+    }
+
+]
